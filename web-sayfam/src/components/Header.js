@@ -2,8 +2,10 @@ export default function Header() {
   return (
     <div className="welcome-section">
       <header>
-        <nav>
-          <a href="">TÜRKÇE'YE GEÇ</a>
+        <nav className="flex text-xl gap-4	pt-8">
+          <a className="basis-[70%] text-right	self-end pr-4" href="#">
+            TÜRKÇE'YE GEÇ
+          </a>
           <p>DARK MODE</p>
         </nav>
         <div>
