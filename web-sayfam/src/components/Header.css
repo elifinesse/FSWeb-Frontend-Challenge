@@ -1,0 +1,10 @@
+.welcome-section {
+  height: 90vh;
+  background: linear-gradient(
+    to right,
+    #493fd3 0%,
+    #493fd3 70%,
+    #cbf281 70%,
+    #cbf281 100%
+  );
+}
