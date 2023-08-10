@@ -3,13 +3,18 @@ export default function Header() {
     <div className="welcome-section">
       <header>
         <nav className="flex text-xl gap-4	pt-8">
-          <a className="basis-[70%] text-right	self-end pr-4" href="#">
+          <a
+            className="basis-[70%] text-right	self-end pr-4 font-bold text-limey tracking-[1.5px]"
+            href="#"
+          >
             TÜRKÇE'YE GEÇ
           </a>
-          <p>DARK MODE</p>
+          <p className="font-bold text-electric-blue tracking-[1.5px]">
+            DARK MODE
+          </p>
         </nav>
         <div>
-          <h2>elif</h2>
+          <h2 className="text-limey">elif</h2>
           <nav>
             <a href="#">Skills</a>
             <a href="#">Projects</a>

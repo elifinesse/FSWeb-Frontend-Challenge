@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       colors: {
         "electric-blue": "#493fd3",
+        limey: "#CBF281",
       },
     },
   },
