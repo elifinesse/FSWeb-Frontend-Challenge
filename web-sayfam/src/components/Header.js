@@ -1,40 +1,18 @@
 export default function Header() {
+  const textClass = "font-bold text-[15px] tracking-[1.5px]";
   return (
-    <div className="welcome-section">
+    <>
+      <div className="circle-filled"></div>
       <header>
-        <nav className="flex text-xl gap-4	pt-8">
-          <a
-            className="basis-[70%] text-right	self-end pr-4 font-bold text-limey tracking-[1.5px]"
-            href="#"
-          >
-            TÜRKÇE'YE GEÇ
-          </a>
-          <p className="font-bold text-electric-blue tracking-[1.5px]">
-            DARK MODE
+        <nav className="flex gap-4 pt-6 justify-end	">
+          <p className={`${textClass} text-gri`}>DARK MODE</p>{" "}
+          <p className={`${textClass} text-gri`}>|</p>
+          <p className={`${textClass} text-gri`}>
+            <span className={`${textClass} text-pembe`}>TÜRKÇE</span>
+            'YE GEÇ
           </p>
         </nav>
-        <div>
-          <h2 className="text-limey">elif</h2>
-          <nav>
-            <a href="#">Skills</a>
-            <a href="#">Projects</a>
-            <a href="#">Contact</a>
-          </nav>
-        </div>
       </header>
-      <div>
-        <div>
-          <h1>I am a Frontend Developer...</h1>
-          <h3>
-            ...who likes to craft solid and scalable frontend products with
-            great user experiences.
-          </h3>
-          <div>
-            <button>Github</button>
-            <button>Linkedin</button>
-          </div>
-        </div>
-      </div>
-    </div>
+    </>
   );
 }
