@@ -4,7 +4,11 @@ export default function Header() {
     <>
       <div className="circle-filled"></div>
       <header>
-        <nav className="flex gap-4 pt-6 justify-end	">
+        <nav className="flex gap-4 pt-4 justify-end	items-center">
+          <label class="switch">
+            <input type="checkbox" />
+            <span class="slider"></span>
+          </label>
           <p className={`${textClass} text-gri`}>DARK MODE</p>{" "}
           <p className={`${textClass} text-gri`}>|</p>
           <p className={`${textClass} text-gri`}>
