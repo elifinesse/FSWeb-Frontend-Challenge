@@ -1,6 +1,7 @@
 .skills-section {
   display: flex;
-  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .yarim-daire {
   margin-left: 880px;
@@ -24,6 +25,7 @@
   font-weight: 500;
   line-height: normal;
   letter-spacing: 0.48px;
+  padding: 1rem 0 3rem 0;
 }
 .skill p {
   color: #777;
@@ -37,4 +39,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+.grey-pill {
+  content: "";
+  width: 110px;
+  height: 49px;
+  border-radius: 0 12rem 12rem 0;
+  background-color: #525252;
+  align-self: flex-start;
+  margin-bottom: 3rem;
 }
