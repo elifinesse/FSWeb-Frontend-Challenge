@@ -1,0 +1,40 @@
+.skills-section {
+  display: flex;
+  justify-content: center;
+}
+.yarim-daire {
+  margin-left: 880px;
+  width: 120px;
+  height: 60px;
+  border-bottom: 21px solid #d9d9d9;
+  border-right: 21px solid #d9d9d9;
+  border-left: 21px solid #d9d9d9;
+  border-radius: 0 0 12rem 12rem;
+}
+.sc-inner {
+  width: 100px;
+  height: 50px;
+  color: #ffffff;
+  border-radius: 0 0 12rem 12rem;
+}
+.skills-heading {
+  color: #0a0a14;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.48px;
+}
+.skill p {
+  color: #777;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+}
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
