@@ -35,6 +35,9 @@ function Hero() {
             <img src="./images/foto.png" alt="foto" />
           </div>
         </div>
+        <div className="semi-circle">
+          <div className="sc-inner"></div>
+        </div>
       </div>
     </div>
   );
