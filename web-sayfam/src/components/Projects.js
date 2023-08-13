@@ -20,7 +20,7 @@ function Projects() {
     },
   ];
   return (
-    <div className="skills-section bg-white dark:bg-bg-dark-grey">
+    <div className="skills-section pb-10 bg-white dark:bg-bg-dark-grey">
       <div className="container">
         <h2 className="skills-heading text-center dark:text-white">Projects</h2>
         <div className="all-projects dark:text-white">
