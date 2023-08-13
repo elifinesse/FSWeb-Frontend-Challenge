@@ -1,4 +1,5 @@
 function Projects() {
+  const projectBG = ["bg-[#DDEEFE]", "bg-[#D9F6F1]"];
   const projects = [
     {
       title: "Random Jokes",
@@ -18,27 +19,29 @@ function Projects() {
     },
   ];
   return (
-    <div className="bg-white">
+    <div className="skills-section bg-white">
       <div className="container">
-        <h2>Projects</h2>
-        <div>
+        <h2 className="skills-heading text-center">Projects</h2>
+        <div className="all-projects">
           {projects.map((project, idx) => (
-            <div>
+            <div className={projectBG[idx] + " project-box"}>
               <h3>{project.title}</h3>
-              <p>{project.description}</p>
+              <p className="project-desc">{project.description}</p>
               <div>
                 {project.tags.map((tag) => (
-                  <p>{tag}</p>
+                  <p className="project-tag">{tag}</p>
                 ))}
               </div>
-              <div>
+              <div className="links">
                 <a href={project.github}>View on Github</a>
                 <a href={project.app}>Go to App →</a>
               </div>
-              <img
-                src={`./images/project-${idx + 1}.png`}
-                alt={project.title}
-              />
+              <div className="self-end">
+                <img
+                  src={`./images/project-${idx + 1}.png`}
+                  alt={project.title}
+                />
+              </div>
             </div>
           ))}
         </div>
