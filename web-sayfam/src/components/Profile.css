@@ -67,3 +67,17 @@
   padding: 2rem 3rem;
   max-width: 600px;
 }
+
+.circle-decoration {
+  position: absolute;
+  margin-top: 2rem;
+  right: 0;
+  transform: translateY(-50%) translateX(30%);
+}
+
+.circle-1 {
+  width: 121px;
+  height: 121px;
+  border: 21px solid #ea2678;
+  border-radius: 50%;
+}

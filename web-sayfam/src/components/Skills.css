@@ -4,19 +4,15 @@
   flex-direction: column;
 }
 .yarim-daire {
-  margin-left: 880px;
-  width: 120px;
-  height: 60px;
-  border-bottom: 21px solid #d9d9d9;
-  border-right: 21px solid #d9d9d9;
-  border-left: 21px solid #d9d9d9;
-  border-radius: 0 0 12rem 12rem;
+  position: absolute;
+  right: 20%;
+  transform: translateY(-50%) translateX(30%);
 }
-.sc-inner {
-  width: 100px;
-  height: 50px;
-  color: #ffffff;
-  border-radius: 0 0 12rem 12rem;
+.yd-ic {
+  width: 121px;
+  height: 121px;
+  border: 21px solid #d9d9d9;
+  border-radius: 50%;
 }
 .skills-heading {
   color: #0a0a14;

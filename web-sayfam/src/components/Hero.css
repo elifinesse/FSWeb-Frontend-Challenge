@@ -69,34 +69,7 @@
   align-items: center;
   padding-bottom: 1rem;
 }
-.semi-circle {
-  margin-left: 880px;
-  width: 120px;
-  height: 60px;
-  border-top: 21px solid #d9d9d9;
-  border-right: 21px solid #d9d9d9;
-  border-left: 21px solid #d9d9d9;
-  border-radius: 12rem 12rem 0rem 0rem;
-}
-.sc-inner {
-  width: 100px;
-  height: 50px;
-  color: #f4f4f4;
-  border-radius: 12rem 12rem 0rem 0rem;
-}
 
-.circle-1 {
-  width: 121px;
-  height: 121px;
-  border: 21px solid #ea2678;
-  border-radius: 50%;
-}
-.circle-2 {
-  width: 100px;
-  height: 100px;
-  color: white;
-  border-radius: 50%;
-}
 .pill {
   content: "";
   width: 108px;
