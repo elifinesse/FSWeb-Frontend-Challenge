@@ -2,16 +2,18 @@ import Header from "./Header";
 
 function Hero() {
   return (
-    <div className="welcome-section bg-bg-gri">
+    <div className="welcome-section bg-bg-gri dark:bg-dark-grey">
       <div className="container">
         <Header />
         <div className="hero-content">
           <div className="hero-text">
             <div className="flex flex-col gap-5">
-              <p className="text-[30px] tracking-[3px]">Hi!👋</p>
-              <h2 className="hero-h2">
+              <p className="text-[30px] tracking-[3px] dark:text-white">
+                Hi!👋
+              </p>
+              <h2 className="hero-h2 text-blackish dark:text-white">
                 <div className="highlighted">
-                  <p>I am Elif. </p>
+                  <p className="dark:text-white">I am Elif. </p>
                 </div>{" "}
                 I’m a full-stack developer. I can craft solid and scalable
                 frontend products. Let’s meet!
@@ -22,7 +24,7 @@ function Hero() {
                 <img src="./icons/LinkedIn.svg" alt="linkedIn logo" />
                 <img src="./icons/github.svg" alt="github logo" />
               </div>
-              <p className="contact-info">
+              <p className="contact-info dark:text-white">
                 Currently <span className="text-pembe">Freelancing</span> for{" "}
                 <span className="text-pembe">UX, UI, & Web Design </span>{" "}
                 Projects.

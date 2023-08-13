@@ -9,6 +9,8 @@ module.exports = {
         blackish: "#0A0A14",
         "light-grey": "#D9D9D9",
         "bg-gri": "#F4F4F4",
+        "dark-grey": "#2A262B",
+        "bg-grey": "#484148",
       },
     },
   },
