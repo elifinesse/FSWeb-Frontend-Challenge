@@ -2,11 +2,13 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  padding-top: 4rem;
 }
 .yarim-daire {
   position: absolute;
+
   right: 20%;
-  transform: translateY(-50%) translateX(30%);
+  transform: translateY(-100%) translateX(30%);
 }
 .yd-ic {
   width: 121px;
