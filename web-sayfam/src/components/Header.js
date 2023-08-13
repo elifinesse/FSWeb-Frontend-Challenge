@@ -9,7 +9,7 @@ export default function Header() {
   }
   return (
     <>
-      <div className="circle-filled"></div>
+      <div className="circle-filled dark:bg-[#525252]"></div>
       <header>
         <nav className="flex gap-4 pt-4 justify-end	items-center">
           <label className="switch">
@@ -20,7 +20,9 @@ export default function Header() {
             />
             <span className="slider"></span>
           </label>
-          <p className={`${textClass} text-gri dark:text-white`}>DARK MODE</p>{" "}
+          <p className={`${textClass} text-gri dark:text-white`}>
+            {darkMode ? "LIGHT MODE" : "DARK MODE"}
+          </p>{" "}
           <p className={`${textClass} text-gri`}>|</p>
           <p className={`${textClass} text-gri`}>
             <span className={`${textClass} text-pembe`}>TÜRKÇE</span>
