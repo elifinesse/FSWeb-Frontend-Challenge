@@ -1,5 +1,6 @@
 function Projects() {
   const projectBG = ["bg-[#DDEEFE]", "bg-[#D9F6F1]"];
+  const projectDarkBG = ["dark:bg-[#2D3235]", "dark:bg-[#495351]"];
   const projects = [
     {
       title: "Random Jokes",
@@ -19,17 +20,21 @@ function Projects() {
     },
   ];
   return (
-    <div className="skills-section bg-white">
+    <div className="skills-section bg-white dark:bg-bg-dark-grey">
       <div className="container">
-        <h2 className="skills-heading text-center">Projects</h2>
-        <div className="all-projects">
+        <h2 className="skills-heading text-center dark:text-white">Projects</h2>
+        <div className="all-projects dark:text-white">
           {projects.map((project, idx) => (
-            <div className={projectBG[idx] + " project-box"}>
+            <div
+              className={`
+                ${projectBG[idx]} ${projectDarkBG[idx]} project-box
+              `}
+            >
               <h3>{project.title}</h3>
               <p className="project-desc">{project.description}</p>
               <div className="tags">
                 {project.tags.map((tag) => (
-                  <p>{tag}</p>
+                  <p className="dark:bg-[#525252]">{tag}</p>
                 ))}
               </div>
               <div className="links">
