@@ -4,6 +4,7 @@ import "./index.css";
 import "./components/Header.css";
 import "./components/Hero.css";
 import "./components/Skills.css";
+import "./components/Profile.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
