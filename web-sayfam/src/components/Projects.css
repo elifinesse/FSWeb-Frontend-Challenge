@@ -10,6 +10,7 @@
   border-radius: 12px;
   display: flex;
   flex-direction: column;
+  gap: 1.5rem;
 }
 .project-box h3 {
   font-family: Playfair Display;
@@ -31,4 +32,20 @@
   font-size: 20px;
   font-weight: 600;
   line-height: 150%;
+  display: flex;
+  justify-content: space-between;
+}
+.tags {
+  display: flex;
+  gap: 10px;
+  max-width: 260px;
+  flex-wrap: wrap;
+}
+.tags p {
+  padding: 0.5rem 1rem;
+  background-color: white;
+  border-radius: 76px;
+  font-family: Playfair Display;
+  font-weight: 700;
+  letter-spacing: 0.8px;
 }

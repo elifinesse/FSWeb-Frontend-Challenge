@@ -27,9 +27,9 @@ function Projects() {
             <div className={projectBG[idx] + " project-box"}>
               <h3>{project.title}</h3>
               <p className="project-desc">{project.description}</p>
-              <div>
+              <div className="tags">
                 {project.tags.map((tag) => (
-                  <p className="project-tag">{tag}</p>
+                  <p>{tag}</p>
                 ))}
               </div>
               <div className="links">
