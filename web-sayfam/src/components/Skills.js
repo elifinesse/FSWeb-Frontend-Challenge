@@ -4,8 +4,8 @@ function Skills() {
     <>
       <div className="skills-section dark:bg-bg-dark-grey">
         <div className="container">
-          <div className="yarim-daire dark:border-[#525252]">
-            <div className="yd-ic"></div>
+          <div className="yarim-daire ">
+            <div className="yd-ic dark:border-[#525252]"></div>
           </div>
           <div className="flex flex-col items-center">
             <h2 className="skills-heading dark:text-white">Skills</h2>

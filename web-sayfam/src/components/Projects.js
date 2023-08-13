@@ -1,5 +1,9 @@
 function Projects() {
-  return;
+  return (
+    <div className="bg-white">
+      <div className="container"></div>
+    </div>
+  );
 }
 
 export default Projects;
