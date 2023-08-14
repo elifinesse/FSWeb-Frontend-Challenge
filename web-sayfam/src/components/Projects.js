@@ -37,7 +37,7 @@ function Projects() {
                   <p className="dark:bg-[#525252]">{tag}</p>
                 ))}
               </div>
-              <div className="links">
+              <div className="links flex-1">
                 <a href={project.github}>View on Github</a>
                 <a href={project.app}>Go to App →</a>
               </div>
