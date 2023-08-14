@@ -81,4 +81,5 @@
   height: 121px;
   border: 21px solid #ea2678;
   border-radius: 50%;
+  clip-path: polygon(0 0, 70% 0, 70% 100%, 0 100%);
 }
