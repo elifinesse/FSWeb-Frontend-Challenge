@@ -8,7 +8,7 @@ function Profile() {
   const infoLabel = [
     "Date of Birth",
     "Place of Residence",
-    "Undrergrad Education",
+    "Undergrad Education",
     "Master's",
     "Preferred Role",
   ];
