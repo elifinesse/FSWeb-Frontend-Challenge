@@ -21,7 +21,7 @@ function Profile() {
   ];
   return (
     <div className="bg-light-grey">
-      <div class="circle-decoration">
+      <div className="circle-decoration">
         <div className="circle-1"></div>
       </div>
 
@@ -35,7 +35,7 @@ function Profile() {
               <h3 className="info-h3 text-pembe mb-8">Basic Information</h3>
               <div className="personal-info">
                 {infoLabel.map((info, idx) => (
-                  <div className="info-pair dark:text-white">
+                  <div className="info-pair dark:text-white" key={idx}>
                     <p className="info-label font-semibold">{info}</p>
                     <p className="info-data">{infoData[idx]}</p>
                   </div>

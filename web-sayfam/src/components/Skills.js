@@ -11,7 +11,7 @@ function Skills() {
             <h2 className="skills-heading dark:text-white">Skills</h2>
             <div className="flex gap-12 flex-wrap">
               {skills.map((skill, idx) => (
-                <div className="skill">
+                <div className="skill" key={idx}>
                   <img src={`./images/skills-${idx + 1}.png`} alt={skill} />
                   <p>{skill}</p>
                 </div>
