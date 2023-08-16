@@ -3,9 +3,18 @@ import { DarkModeContext } from "../DarkModeContext";
 
 export default function Header() {
   const textClass = "font-bold text-[15px] tracking-[1.5px]";
-  const { darkMode, toggleDarkMode } = useContext(DarkModeContext);
+  const { darkMode, toggleDarkMode, data, setLang } =
+    useContext(DarkModeContext);
+  const { header } = data;
   function handleDarkMode() {
     toggleDarkMode();
+  }
+  function handleClick(e) {
+    if (e.target.outerText === "ENGLISH") {
+      setLang("eng");
+    } else if (e.target.outerText === "TÜRKÇE") {
+      setLang("tr");
+    }
   }
   return (
     <>
@@ -21,12 +30,15 @@ export default function Header() {
             <span className="slider"></span>
           </label>
           <p className={`${textClass} text-gri dark:text-white`}>
-            {darkMode ? "LIGHT MODE" : "DARK MODE"}
+            {darkMode ? header.lm : header.dm}
           </p>{" "}
           <p className={`${textClass} text-gri`}>|</p>
           <p className={`${textClass} text-gri`}>
-            <span className={`${textClass} text-pembe`}>TÜRKÇE</span>
-            'YE GEÇ
+            {" " + header.prefix + " "}
+            <span className={`${textClass} text-pembe`} onClick={handleClick}>
+              {header.lang}
+            </span>
+            {header.suffix}
           </p>
         </nav>
       </header>
