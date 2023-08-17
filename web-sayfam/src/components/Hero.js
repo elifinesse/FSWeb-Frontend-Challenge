@@ -1,22 +1,34 @@
 import Header from "./Header";
+import { useContext } from "react";
+import { DarkModeContext } from "../DarkModeContext";
 
 function Hero() {
+  const {
+    greeting,
+    name,
+    h2,
+    first_black,
+    first_pink,
+    second_black,
+    second_pink,
+    third_black,
+    invite,
+  } = useContext(DarkModeContext).data.hero;
   return (
-    <div className="welcome-section bg-bg-gri dark:bg-dark-grey">
+    <div className="welcome-section bg-bg-gri dark:bg-dark-grey pb-20">
       <div className="container">
         <Header />
         <div className="hero-content">
           <div className="hero-text">
             <div className="flex flex-col gap-5">
               <p className="text-[30px] tracking-[3px] dark:text-white">
-                Hi!👋
+                {greeting}👋
               </p>
               <h2 className="hero-h2 text-blackish dark:text-white">
                 <div className="highlighted">
-                  <p className="dark:text-white">I am Elif. </p>
+                  <p className="dark:text-white">{name} </p>
                 </div>{" "}
-                I’m a full-stack developer. I can craft solid and scalable
-                frontend products. Let’s meet!
+                {h2}
               </h2>
             </div>
             <div className="flex flex-col gap-6">
@@ -25,11 +37,11 @@ function Hero() {
                 <img src="./icons/github.svg" alt="github logo" />
               </div>
               <p className="contact-info dark:text-white">
-                Currently <span className="text-pembe">Freelancing</span> for{" "}
-                <span className="text-pembe">UX, UI, & Web Design </span>{" "}
-                Projects.
-                <br /> Invite me to join your team -{" "}
-                <span className="text-pembe">pratamaiosi@gmail.com</span>
+                {first_black} <span className="text-pembe">{first_pink}</span>{" "}
+                {second_black}{" "}
+                <span className="text-pembe">{second_pink} </span> {third_black}
+                <br /> {invite}{" "}
+                <span className="text-pembe">elysaglam@gmail.com</span>
               </p>
             </div>
           </div>

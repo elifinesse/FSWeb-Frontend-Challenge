@@ -1,17 +1,20 @@
+import { useContext } from "react";
+import { DarkModeContext } from "../DarkModeContext";
+
 export default function Footer() {
+  const { text_prev, highlight, text_end, blog } =
+    useContext(DarkModeContext).data.footer;
   return (
     <div className="skills-section dark:bg-[#484148] pb-20">
       <div className="container">
         <footer>
           <div className="footer-text ">
             <p className="dark:text-white">
-              Let's{" "}
+              {text_prev}{" "}
               <span className="blue-highlight">
-                <span className="footer-text dark:text-white">
-                  work together
-                </span>
+                <span className="footer-text dark:text-white">{highlight}</span>
               </span>{" "}
-              on your next product.
+              {text_end}
             </p>
           </div>
           <div className="footer-links">
@@ -19,7 +22,7 @@ export default function Footer() {
               Github
             </a>
             <a href="#" className="dark:text-white">
-              Personal Blog
+              {blog}
             </a>
             <a href="#" className="text-[#0077B5]">
               LinkedIn

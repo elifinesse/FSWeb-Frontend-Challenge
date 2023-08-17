@@ -19,9 +19,9 @@ export const content = {
       invite: "Invite me to join your team -",
       email: "elysaglam@gmail.com",
     },
-    skills: { title: "SKILLS" },
+    skills: { title: "Skills" },
     profile: {
-      title: "PROFILE",
+      title: "Profiile",
       info_title: "Basic Information",
       infoLabel: [
         "Date of Birth",
@@ -42,7 +42,7 @@ export const content = {
       p2: "Mnima accusamus ratione soluta aperiam sit voluptate? Dicta quod deserunt quam temporibus cumque magnam!",
     },
     projects: {
-      title: "PROJECTS",
+      title: "Projects",
       projects: [
         {
           title: "Random Jokes",
@@ -84,18 +84,18 @@ export const content = {
     hero: {
       greeting: "Selam!",
       name: "Ben Elif.",
-      h2: "I’m a full-stack developer. I can craft solid and scalable frontend products. Let’s meet!",
+      h2: "Burada Türkçe bir şeyler olacak. Türkçe veriler geliyor mu?",
       first_black: "Şu an",
       first_pink: "UX, UI ve Web Tasarım",
       second_black: "projeleri için",
       second_pink: "Freelance",
       third_black: "çalışıyorum.",
-      invite: "Ekibinize uygun olduğumu düşünüyorsanız -",
+      invite: "Ekibinizde yer almamı istiyorsanız -",
       email: "elysaglam@gmail.com",
     },
-    skills: { title: "BECERİLER" },
+    skills: { title: "Beceriler" },
     profile: {
-      title: "PROFİL",
+      title: "Profil",
       info_title: "Kişisel Bilgiler",
       infoLabel: [
         "Doğum Tarihi",
@@ -116,26 +116,26 @@ export const content = {
       p2: "Mnima accusamus ratione soluta aperiam sit voluptate? Dicta quod deserunt quam temporibus cumque magnam!",
     },
     projects: {
-      title: "PROJELER",
+      title: "Projeler",
       projects: [
         {
-          title: "Random Jokes",
+          title: "Şakalar",
           description:
             "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia.",
           tags: ["react", "vercel", "axios", "router"],
-          github_text: "Github'da görüntüleyin",
+
           github: "#",
-          app_text: "App'e gidin",
+
           app: "#",
         },
         {
-          title: "Are you bored",
+          title: "Sıkıldınız mı?",
           description:
             "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia minima accusamus ratione soluta aperiam sit voluptate? Dicta quod deserunt quam temporibus cumque magnam!",
           tags: ["react", "redux", "vercel", "axios", "router"],
-          github_text: "Github'da görüntüleyin",
+
           github: "#",
-          app_text: "App'e gidin",
+
           app: "#",
         },
       ],

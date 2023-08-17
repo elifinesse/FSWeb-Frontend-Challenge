@@ -35,7 +35,10 @@ export default function Header() {
           <p className={`${textClass} text-gri`}>|</p>
           <p className={`${textClass} text-gri`}>
             {" " + header.prefix + " "}
-            <span className={`${textClass} text-pembe`} onClick={handleClick}>
+            <span
+              className={`${textClass} text-pembe cursor-pointer`}
+              onClick={handleClick}
+            >
               {header.lang}
             </span>
             {header.suffix}
