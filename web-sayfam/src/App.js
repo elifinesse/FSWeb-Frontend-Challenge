@@ -10,7 +10,11 @@ import { content } from "./data";
 import axios from "axios";
 
 function App() {
-  const [lang, setLang] = useState(window.navigator.language);
+  const [lang, setLang] = useState(
+    localStorage.getItem("lang") === null
+      ? window.navigator.language
+      : localStorage.getItem("lang")
+  );
   const [data, setData] = useState({});
   useEffect(() => {
     if (lang === "tr") {
@@ -28,14 +32,28 @@ function App() {
 
   const [darkMode, setDarkMode] = useState(() => {
     const userPref = window.matchMedia("(prefers-color-scheme: dark)");
-    if (userPref.matches) {
+    if (localStorage.getItem("darkmode") !== null) {
+      return JSON.parse(localStorage.getItem("darkmode"));
+    } else if (userPref.matches) {
       document.querySelector("html").classList.add("dark");
     }
     return userPref.matches;
   });
+  useEffect(() => {
+    const initialDarkMode = () => {
+      if (darkMode) {
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+      }
+    };
+
+    initialDarkMode();
+  }, [darkMode]);
 
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
+    localStorage.setItem("darkmode", JSON.stringify(!darkMode));
     document.querySelector("html").classList.toggle("dark", !darkMode);
   };
 

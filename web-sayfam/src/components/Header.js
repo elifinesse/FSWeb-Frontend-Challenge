@@ -11,9 +11,11 @@ export default function Header() {
   }
   function handleClick(e) {
     if (e.target.outerText === "ENGLISH") {
-      setLang("eng");
+      setLang("en");
+      localStorage.setItem("lang", "en");
     } else if (e.target.outerText === "TÜRKÇE") {
       setLang("tr");
+      localStorage.setItem("lang", "tr");
     }
   }
   return (
