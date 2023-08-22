@@ -4,3 +4,62 @@
 * {
   font-family: "Inter", sans-serif;
 }
+@media (max-width: 1025px) {
+  .profile-info {
+    flex-direction: column;
+  }
+  .hero-h2 {
+    font-size: 2rem;
+  }
+  .highlighted {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 768px) {
+  .hero-h2 {
+    font-size: 1.5rem;
+  }
+  .highlighted {
+    font-size: 1.5rem;
+  }
+  .highlighted p::before {
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    left: -5px;
+    width: 80px;
+    height: 20px;
+    background-color: #ea2678;
+    z-index: -1;
+    border-radius: 6px;
+  }
+}
+@media (max-width: 664px) {
+  .footer-text {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 480px) {
+  .hero-content {
+    flex-direction: column-reverse;
+  }
+  .hero-img {
+    max-width: 250px;
+  }
+}
+@media (max-width: 435px) {
+  .skill img {
+    max-width: 60px;
+  }
+  .skill p {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 574px) {
+  .blue-highlight span::before {
+    content: "";
+
+    width: 0;
+    height: 0;
+  }
+}

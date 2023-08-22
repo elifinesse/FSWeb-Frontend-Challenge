@@ -33,6 +33,7 @@
   border-radius: 12px;
   padding: 2rem 3rem;
   box-shadow: 10px 5px 5px rgba(82, 82, 82, 0.5);
+  flex-basis: 100%;
 }
 .personal-info {
   display: flex;

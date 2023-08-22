@@ -21,7 +21,7 @@ export const content = {
     },
     skills: { title: "Skills" },
     profile: {
-      title: "Profiile",
+      title: "Profile",
       info_title: "Basic Information",
       infoLabel: [
         "Date of Birth",

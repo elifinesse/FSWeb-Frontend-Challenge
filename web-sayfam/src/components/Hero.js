@@ -21,7 +21,7 @@ function Hero() {
         <div className="hero-content">
           <div className="hero-text">
             <div className="flex flex-col gap-5">
-              <p className="text-[30px] tracking-[3px] dark:text-white">
+              <p className="text-[30px] tracking-[3px] dark:text-white md:max-lg:text-2xl sm:max-md:text-lg max-[480px]:text-base">
                 {greeting}👋
               </p>
               <h2 className="hero-h2 text-blackish dark:text-white">

@@ -31,7 +31,7 @@ function App() {
     }
   }, [lang]);
 
-  const { darkMode, toggleDarkMode } = useDarkMode();
+  const { darkMode } = useDarkMode();
 
   let access;
   lang === "tr" ? (access = "YÜKLENİYOR") : (access = "LOADING");
