@@ -1,9 +1,9 @@
 import { useContext } from "react";
-import { DarkModeContext } from "../DarkModeContext";
+import { LanguageContext } from "../LanguageContext";
 
 function Skills() {
   const skills = ["JAVASCRIPT", "REACT", "REDUX", "NODE", "VS CODE", "FIGMA"];
-  const { title } = useContext(DarkModeContext).data.skills;
+  const { title } = useContext(LanguageContext).data.skills;
   return (
     <>
       <div className="skills-section dark:bg-bg-dark-grey">

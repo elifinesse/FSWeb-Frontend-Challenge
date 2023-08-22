@@ -1,10 +1,11 @@
 import { useContext } from "react";
-import { DarkModeContext } from "../DarkModeContext";
+import { LanguageContext } from "../LanguageContext";
+import useDarkMode from "../hooks/useDarkMode";
 
 export default function Header() {
   const textClass = "font-bold text-[15px] tracking-[1.5px]";
-  const { darkMode, toggleDarkMode, data, setLang } =
-    useContext(DarkModeContext);
+  const { data, setLang } = useContext(LanguageContext);
+  const { darkMode, toggleDarkMode } = useDarkMode();
   const { header } = data;
   function handleDarkMode() {
     toggleDarkMode();

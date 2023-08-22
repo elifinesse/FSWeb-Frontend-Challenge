@@ -1,9 +1,9 @@
 import { useContext } from "react";
-import { DarkModeContext } from "../DarkModeContext";
+import { LanguageContext } from "../LanguageContext";
 
 function Profile() {
   const { title, info_title, infoLabel, infoData, about, p1, p2 } =
-    useContext(DarkModeContext).data.profile;
+    useContext(LanguageContext).data.profile;
   return (
     <div className="bg-light-grey">
       <div className="circle-decoration">

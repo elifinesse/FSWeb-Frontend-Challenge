@@ -1,9 +1,9 @@
 import { useContext } from "react";
-import { DarkModeContext } from "../DarkModeContext";
+import { LanguageContext } from "../LanguageContext";
 
 export default function Footer() {
   const { text_prev, highlight, text_end, blog } =
-    useContext(DarkModeContext).data.footer;
+    useContext(LanguageContext).data.footer;
   return (
     <div className="skills-section dark:bg-[#484148] pb-20">
       <div className="container">

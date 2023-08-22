@@ -1,10 +1,11 @@
 import { useContext } from "react";
-import { DarkModeContext } from "../DarkModeContext";
+import { LanguageContext } from "../LanguageContext";
 
 function Projects() {
   const projectBG = ["bg-[#DDEEFE]", "bg-[#D9F6F1]"];
   const projectDarkBG = ["dark:bg-[#2D3235]", "dark:bg-[#495351]"];
-  const { title, projects, lang } = useContext(DarkModeContext).data.projects;
+  const { title, projects } = useContext(LanguageContext).data.projects;
+  const { lang } = useContext(LanguageContext);
 
   return (
     <div className="skills-section pb-10 bg-white dark:bg-bg-dark-grey">
@@ -29,10 +30,10 @@ function Projects() {
               </div>
               <div className="links flex-1">
                 <a href={project.github}>
-                  {lang === "eng" ? "View on Github" : "Github'da görüntüleyin"}
+                  {lang === "tr" ? "Github'da görüntüleyin" : "View on Github"}
                 </a>
                 <a href={project.app}>
-                  {lang === "eng" ? "Go to App →" : "App'e gidin →"}
+                  {lang === "tr" ? "App'e gidin →" : "Go to App →"}
                 </a>
               </div>
               <div className="self-end">

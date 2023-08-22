@@ -1,6 +1,6 @@
 import Header from "./Header";
 import { useContext } from "react";
-import { DarkModeContext } from "../DarkModeContext";
+import { LanguageContext } from "../LanguageContext";
 
 function Hero() {
   const {
@@ -13,7 +13,7 @@ function Hero() {
     second_pink,
     third_black,
     invite,
-  } = useContext(DarkModeContext).data.hero;
+  } = useContext(LanguageContext).data.hero;
   return (
     <div className="welcome-section bg-bg-gri dark:bg-dark-grey pb-20">
       <div className="container">
