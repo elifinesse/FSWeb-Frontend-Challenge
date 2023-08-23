@@ -71,10 +71,12 @@
 }
 
 .circle-decoration {
+  width: 85px;
   position: absolute;
   margin-top: 2rem;
-  right: 0;
+  right: 26px;
   transform: translateY(-50%) translateX(30%);
+  overflow: hidden;
 }
 
 .circle-1 {

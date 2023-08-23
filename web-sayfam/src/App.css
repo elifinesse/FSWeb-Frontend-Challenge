@@ -54,11 +54,19 @@
   .skill p {
     font-size: 1rem;
   }
+  .container {
+    padding: 2rem;
+  }
+  .personal-info p {
+    font-size: 1rem;
+  }
+  .circle-filled {
+    width: 0;
+    height: 0;
+  }
 }
 @media (max-width: 574px) {
   .blue-highlight span::before {
-    content: "";
-
     width: 0;
     height: 0;
   }
