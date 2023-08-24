@@ -84,7 +84,7 @@ export const content = {
     hero: {
       greeting: "Selam!",
       name: "Ben Elif.",
-      h2: "Burada Türkçe bir şeyler olacak. Türkçe veriler geliyor mu?",
+      h2: "Burada Türkçe bir şeyler olacak. Türkçe veri için test... bir... iki",
       first_black: "Şu an",
       first_pink: "UX, UI ve Web Tasarım",
       second_black: "projeleri için",
