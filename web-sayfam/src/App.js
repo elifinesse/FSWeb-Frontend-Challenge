@@ -18,7 +18,7 @@ function App() {
   );
   const [data, setData] = useState({});
   useEffect(() => {
-    if (lang === "tr") {
+    if (lang.startsWith("tr")) {
       axios
         .post("https://reqres.in/api/workintech", content.tr)
         .then((res) => setData(res.data))
@@ -34,7 +34,7 @@ function App() {
   const { darkMode } = useDarkMode();
 
   let access;
-  lang === "tr" ? (access = "YÜKLENİYOR") : (access = "LOADING");
+  lang.startsWith("tr") ? (access = "YÜKLENİYOR") : (access = "LOADING");
 
   return (
     <div className={`App ${darkMode ? "dark" : ""}`}>
