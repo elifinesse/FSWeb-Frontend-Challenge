@@ -17,24 +17,25 @@ function App() {
       : localStorage.getItem("lang")
   );
   const [data, setData] = useState({});
+
+  let icerik;
+  let access;
+  if (lang.startsWith("tr")) {
+    icerik = content.tr;
+    access = "YÜKLENİYOR...";
+  } else {
+    icerik = content.eng;
+    access = "LOADING...";
+  }
+
   useEffect(() => {
-    if (lang.startsWith("tr")) {
-      axios
-        .post("https://reqres.in/api/workintech", content.tr)
-        .then((res) => setData(res.data))
-        .catch((err) => console.log(err));
-    } else {
-      axios
-        .post("https://reqres.in/api/workintech", content.eng)
-        .then((res) => setData(res.data))
-        .catch((err) => console.log(err));
-    }
+    axios
+      .post("https://reqres.in/api/workintech", icerik)
+      .then((res) => setData(res.data))
+      .catch((err) => console.log(err));
   }, [lang]);
 
   const { darkMode } = useDarkMode();
-
-  let access;
-  lang.startsWith("tr") ? (access = "YÜKLENİYOR") : (access = "LOADING");
 
   return (
     <div className={`App ${darkMode ? "dark" : ""}`}>

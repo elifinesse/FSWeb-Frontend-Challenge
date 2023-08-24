@@ -44,7 +44,6 @@ export default function useDarkMode() {
     const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
     mediaQuery.addEventListener("change", handler);
 
-    // Cleanup function
     return () => mediaQuery.removeEventListener("change", handler);
   };
 

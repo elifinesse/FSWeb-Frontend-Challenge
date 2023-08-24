@@ -26,7 +26,7 @@ export const content = {
       infoLabel: [
         "Date of Birth",
         "Place of Residence",
-        "Undergrad Education",
+        "Undergrad",
         "Master's",
         "Preferred Role",
       ],
