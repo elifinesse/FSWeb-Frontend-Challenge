@@ -71,10 +71,13 @@
   gap: 2rem;
 }
 
-.pill {
+.pink-rectangle {
   content: "";
-  width: 108px;
+  width: 143px;
   height: 59px;
-  border-radius: 12rem 0 0 12rem;
+  border-radius: 29.5px 0 0 29.5px;
   background-color: #ea2678;
+  position: absolute;
+  right: 0;
+  transform: translateY(350%);
 }

@@ -48,6 +48,7 @@ function Hero() {
           <div className="hero-img">
             <img src="./images/foto.png" alt="foto" />
           </div>
+          <div className="pink-rectangle"></div>
         </div>
       </div>
     </div>

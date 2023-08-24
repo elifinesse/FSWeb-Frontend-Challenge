@@ -23,7 +23,7 @@ function Skills() {
             </div>
           </div>
         </div>
-        <div className="grey-pill"></div>
+        <div className="grey-rectangle"></div>
       </div>
     </>
   );
