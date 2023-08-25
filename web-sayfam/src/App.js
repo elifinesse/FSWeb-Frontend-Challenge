@@ -17,6 +17,7 @@ function App() {
       : localStorage.getItem("lang")
   );
   const [data, setData] = useState({});
+  const [error, setError] = useState(null);
 
   let icerik;
   let access;
@@ -32,15 +33,17 @@ function App() {
     axios
       .post("https://reqres.in/api/workintech", icerik)
       .then((res) => setData(res.data))
-      .catch((err) => console.log(err));
+      .catch((err) => setError(err.name + ": " + err.message));
   }, [lang]);
 
   const { darkMode } = useDarkMode();
 
   return (
     <div className={`App ${darkMode ? "dark" : ""}`}>
-      {Object.keys(data).length === 0 ? (
-        <p>{access}</p>
+      {error ? (
+        <p className="pt-10 text-lg">{error}</p>
+      ) : Object.keys(data).length === 0 ? (
+        <p className="pt-10 text-lg">{access}</p>
       ) : (
         <LanguageContext.Provider value={{ data, setLang, lang }}>
           <Hero />
