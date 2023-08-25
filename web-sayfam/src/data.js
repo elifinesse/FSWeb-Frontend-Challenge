@@ -45,24 +45,25 @@ export const content = {
       title: "Projects",
       projects: [
         {
-          title: "Random Jokes",
+          title: "NASA APOD",
           description:
             "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia.",
           tags: ["react", "vercel", "axios", "router"],
           github_text: "View on Github",
-          github: "#",
+          github: "https://github.com/elifinesse/FSWeb-S6G3-Nasa",
           app_text: "Go to App",
-          app: "#",
+          app: "https://fs-web-s6-g3-nasa-two.vercel.app/",
         },
         {
-          title: "Are you bored",
+          title: "Calculator",
           description:
             "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia minima accusamus ratione soluta aperiam sit voluptate? Dicta quod deserunt quam temporibus cumque magnam!",
           tags: ["react", "redux", "vercel", "axios", "router"],
           github_text: "View on Github",
-          github: "#",
+          github:
+            "https://github.com/elifinesse/fsweb-s10g1-reducer-calculator",
           app_text: "Go to App",
-          app: "#",
+          app: "https://fsweb-s10g1-reducer-calculator-snowy.vercel.app/",
         },
       ],
     },
@@ -119,24 +120,21 @@ export const content = {
       title: "Projeler",
       projects: [
         {
-          title: "Şakalar",
+          title: "NASA APOD",
           description:
             "Türkçe Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia.",
           tags: ["react", "vercel", "axios", "router"],
-
-          github: "#",
-
-          app: "#",
+          github: "https://github.com/elifinesse/FSWeb-S6G3-Nasa",
+          app: "https://fs-web-s6-g3-nasa-two.vercel.app/",
         },
         {
-          title: "Sıkıldınız mı?",
+          title: "Hesap Makinesi",
           description:
             "Türkçe Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia minima accusamus ratione soluta aperiam sit voluptate? Dicta quod deserunt quam temporibus cumque magnam!",
           tags: ["react", "redux", "vercel", "axios", "router"],
-
-          github: "#",
-
-          app: "#",
+          github:
+            "https://github.com/elifinesse/fsweb-s10g1-reducer-calculator",
+          app: "https://fsweb-s10g1-reducer-calculator-snowy.vercel.app/",
         },
       ],
     },

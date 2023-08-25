@@ -29,12 +29,12 @@ function Projects() {
                 ))}
               </div>
               <div className="links flex-1">
-                <a href={project.github}>
+                <a href={project.github} target="_blank">
                   {lang.startsWith("tr")
                     ? "Github'da görüntüleyin"
                     : "View on Github"}
                 </a>
-                <a href={project.app}>
+                <a href={project.app} target="_blank">
                   {lang.startsWith("tr") ? "App'e gidin →" : "Go to App →"}
                 </a>
               </div>
