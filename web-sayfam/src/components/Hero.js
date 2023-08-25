@@ -1,6 +1,7 @@
 import Header from "./Header";
 import { useContext } from "react";
 import { LanguageContext } from "../LanguageContext";
+import useDarkMode from "../hooks/useDarkMode";
 
 function Hero() {
   const {
@@ -14,6 +15,7 @@ function Hero() {
     third_black,
     invite,
   } = useContext(LanguageContext).data.hero;
+  const { darkMode } = useDarkMode();
   return (
     <div className="welcome-section bg-bg-gri dark:bg-dark-grey pb-20">
       <div className="container">
@@ -33,8 +35,20 @@ function Hero() {
             </div>
             <div className="flex flex-col gap-6">
               <div className="flex gap-5">
-                <img src="./icons/LinkedIn.svg" alt="linkedIn logo" />
-                <img src="./icons/github.svg" alt="github logo" />
+                <img
+                  src={
+                    darkMode
+                      ? "./icons/LinkedIn-dark.svg"
+                      : "./icons/LinkedIn.svg"
+                  }
+                  alt="linkedIn logo"
+                />
+                <img
+                  src={
+                    darkMode ? "./icons/github-dark.svg" : "./icons/github.svg"
+                  }
+                  alt="github logo"
+                />
               </div>
               <p className="contact-info dark:text-white">
                 {first_black} <span className="text-pembe">{first_pink}</span>{" "}

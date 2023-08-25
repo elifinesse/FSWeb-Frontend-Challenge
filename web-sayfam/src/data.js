@@ -26,7 +26,7 @@ export const content = {
       infoLabel: [
         "Date of Birth",
         "Place of Residence",
-        "Undergrad",
+        "Undergraduate",
         "Master's",
         "Preferred Role",
       ],
@@ -84,7 +84,7 @@ export const content = {
     hero: {
       greeting: "Selam!",
       name: "Ben Elif.",
-      h2: "Burada Türkçe bir şeyler olacak. Türkçe veri için test... bir... iki",
+      h2: "Burada Türkçe bir şeyler olacak. Türkçe veri için test... bir... iki... üç...",
       first_black: "Şu an",
       first_pink: "UX, UI ve Web Tasarım",
       second_black: "projeleri için",
@@ -112,8 +112,8 @@ export const content = {
         "Frontend, UI",
       ],
       about: "Hakkımda",
-      p1: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia.",
-      p2: "Mnima accusamus ratione soluta aperiam sit voluptate? Dicta quod deserunt quam temporibus cumque magnam!",
+      p1: "Türkçe Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia.",
+      p2: "Türkçe Mnima accusamus ratione soluta aperiam sit voluptate? Dicta quod deserunt quam temporibus cumque magnam!",
     },
     projects: {
       title: "Projeler",
@@ -121,7 +121,7 @@ export const content = {
         {
           title: "Şakalar",
           description:
-            "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia.",
+            "Türkçe Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia.",
           tags: ["react", "vercel", "axios", "router"],
 
           github: "#",
@@ -131,7 +131,7 @@ export const content = {
         {
           title: "Sıkıldınız mı?",
           description:
-            "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia minima accusamus ratione soluta aperiam sit voluptate? Dicta quod deserunt quam temporibus cumque magnam!",
+            "Türkçe Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia minima accusamus ratione soluta aperiam sit voluptate? Dicta quod deserunt quam temporibus cumque magnam!",
           tags: ["react", "redux", "vercel", "axios", "router"],
 
           github: "#",

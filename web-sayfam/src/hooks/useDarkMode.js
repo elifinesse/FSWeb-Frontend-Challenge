@@ -32,11 +32,9 @@ export default function useDarkMode() {
   const readUserColorPreference = () => {
     const handler = ({ matches }) => {
       if (matches) {
-        console.log("change to dark mode!");
         setDarkMode(true);
         document.querySelector("html").classList.add("dark");
       } else {
-        console.log("change to light mode!");
         setDarkMode(false);
         document.querySelector("html").classList.remove("dark");
       }
